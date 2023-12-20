@@ -1,0 +1,13 @@
+.layout {
+  width: 100vw;
+  max-width: var(--container-xl);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 17% 70% 10%;
+}
+.main {
+  padding: var(--padding-sm) var(--padding-xs);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}

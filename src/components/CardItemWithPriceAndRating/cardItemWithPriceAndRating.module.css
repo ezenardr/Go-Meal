@@ -1,0 +1,53 @@
+.card {
+  position: relative;
+  padding: var(--padding-xs) var(--padding-xxs);
+  background-color: var(--color-background-secondary);
+  border-radius: 9px;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+  margin-bottom: 1rem;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.sale {
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  background-color: var(--color-red);
+  padding: 0.3rem 1rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: var(--color-white);
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+.like {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+}
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ratings {
+  display: flex;
+  gap: var(--spacing-xxxs);
+}
+.nameAndPrice p:first-child {
+  color: var(--color-text);
+}
+.nameAndPrice p:nth-child(2) {
+  color: var(--color-text);
+  font-weight: 700;
+}
+.nameAndPrice p:nth-child(2) span {
+  color: var(--color-primary);
+}
+.add {
+  background-color: var(--color-primary);
+  padding: 1rem 1.4rem;
+  border-radius: 5px;
+}
