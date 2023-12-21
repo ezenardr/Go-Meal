@@ -6,6 +6,7 @@
   flex-direction: column;
   align-items: center;
   border-radius: 9px;
+  box-shadow: var(--shadow-card);
 }
 .status {
   position: absolute;

@@ -6,10 +6,9 @@
   cursor: pointer;
   transition: 0.3s all ease-in-out;
   margin-bottom: 1rem;
+  box-shadow: var(--shadow-card);
 }
-.card:hover {
-  transform: scale(1.05);
-}
+
 .sale {
   position: absolute;
   top: 1.5rem;
