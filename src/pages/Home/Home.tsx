@@ -5,8 +5,13 @@ import Burger from "../../img/burger.svg";
 import BurgerImg from "../../img/burger-img.webp";
 import PizzaImg from "../../img/pizza.jpg";
 import Style from "./home.module.css";
-import Layout, { MainContainer } from "../../components/Layout/Layout";
+import Layout, {
+  MainContainer,
+  SimpleDivContainer,
+} from "../../components/Layout/Layout";
 import ProductCardWithoutRating from "../../components/ProductCardWithoutRating/ProductCardWithoutRating";
+import LittleInfoCard from "../../components/LittleInfoCard/LittleInfoCard";
+import BusinessStatusCard from "../../components/BusinessStatusCard/BusinessStatusCard";
 
 export default function Home() {
   return (
@@ -117,7 +122,14 @@ export default function Home() {
           />
         </SectionWithItemList>
       </MainContainer>
-      <aside>aside</aside>
+      <aside className={Style.aside}>
+        <SimpleDivContainer>
+          <BusinessStatusCard />
+          <LittleInfoCard title="Ventes" amount={357} />
+          <LittleInfoCard color="#A6C44A" title="Livraisons" amount={65} />
+          <LittleInfoCard color="#EB5757" amount={1300} title="Revenu" />
+        </SimpleDivContainer>
+      </aside>
     </Layout>
   );
 }

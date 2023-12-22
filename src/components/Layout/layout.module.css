@@ -3,11 +3,27 @@
   max-width: var(--container-xl);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 17% 70% 10%;
+  grid-template-columns: 17% 65% auto;
 }
 .main {
   padding: var(--padding-sm) var(--padding-xs);
   display: flex;
   flex-direction: column;
   gap: var(--spacing-xs);
+}
+.divContainer {
+  padding: var(--padding-sm) var(--padding-xs);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+@media (max-width: 1200px) {
+  .layout {
+    grid-template-columns: 75% 25%;
+  }
+  .main,
+  .divContainer {
+    padding: var(--padding-xl) var(--padding-xs);
+    padding-bottom: 2rem;
+  }
 }

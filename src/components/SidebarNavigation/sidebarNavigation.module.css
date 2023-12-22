@@ -48,3 +48,45 @@
 .navLink {
   letter-spacing: 1px;
 }
+
+@media (max-width: 1200px) {
+  .nav {
+    position: absolute;
+    height: 100vh;
+    z-index: 111;
+    width: 25vw;
+    transform: translateX(-100%);
+    transition: 0.3s all ease-in-out;
+  }
+  .logo {
+    display: none;
+  }
+  .menu {
+    padding: var(--padding-xs) var(--padding-sm);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: var(--color-background-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1111;
+  }
+  .menu .icon {
+    cursor: pointer;
+  }
+  .isOpen {
+    transform: translateX(0);
+  }
+  .responsiveLogo {
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+  .responsiveLogo span {
+    color: var(--color-primary);
+  }
+  .navList {
+    padding-top: 7rem;
+  }
+}

@@ -1,5 +1,6 @@
 import { ChevronRight } from "lucide-react";
 import Style from "./sectionWithItemList.module.css";
+import ScrollContainer from "react-indiana-drag-scroll";
 export default function SectionWithItemList({
   children,
   title,
@@ -16,8 +17,11 @@ export default function SectionWithItemList({
           <ChevronRight />
         </div>
       </div>
-
-      <ul className={Style.articleList}>{children}</ul>
+      <ul className={Style.articleList}>
+        <ScrollContainer className={Style.articleList}>
+          {children}
+        </ScrollContainer>
+      </ul>
     </section>
   );
 }

@@ -1,0 +1,25 @@
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  /* background-color: var(--color-background-primary); */
+  /* background-color: #fff8ea; */
+  /* background-color: #b77f00; */
+  padding: var(--padding-xs) var(--spacing-sm);
+  border-radius: 9px;
+  box-shadow: var(--shadow-card);
+  transition: 0.3s all ease-in-out;
+}
+.card:hover {
+  box-shadow: none;
+}
+.infoBox p:first-child {
+  color: var(--color-text);
+  font-weight: bold;
+  font-size: clamp(2.4rem, 3vw + 1rem, 4rem);
+}
+.infoBox p:nth-child(2) {
+  color: var(--color-text);
+  letter-spacing: 1px;
+}

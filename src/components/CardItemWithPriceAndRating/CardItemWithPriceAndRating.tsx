@@ -41,7 +41,7 @@ export default function CardItemWithPriceAndRating({
           <div className={Style.nameAndPrice}>
             <p>{name}</p>
             <p>
-              <span>$</span>
+              <span>$ </span>
               {price}
             </p>
           </div>

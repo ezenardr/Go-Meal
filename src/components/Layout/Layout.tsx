@@ -6,10 +6,16 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <div className={Style.layout}>
       <SidebarNavigation />
       {children}
-      {/* <MainContainer>{children}</MainContainer> */}
     </div>
   );
 }
 export function MainContainer({ children }: { children: React.ReactNode }) {
   return <main className={Style.main}>{children}</main>;
+}
+export function SimpleDivContainer({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return <div className={Style.divContainer}>{children}</div>;
 }
