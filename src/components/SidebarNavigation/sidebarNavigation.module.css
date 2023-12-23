@@ -111,3 +111,32 @@
     padding-top: 7rem;
   }
 }
+@media (max-width: 768px) {
+  .nav {
+    width: 40vw;
+  }
+}
+@media (max-width: 600px) {
+  .nav {
+    width: 45vw;
+  }
+  .navList {
+    gap: var(--spacing-smd);
+  }
+}
+@media (max-width: 480px) {
+  .nav {
+    width: 60vw;
+  }
+  .linkBox {
+    gap: var(--spacing-smd);
+  }
+}
+@media (max-width: 280px) {
+  .nav {
+    width: 100vw;
+  }
+  .navList {
+    gap: var(--spacing-lg);
+  }
+}

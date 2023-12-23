@@ -27,3 +27,21 @@
     padding-bottom: 2rem;
   }
 }
+@media (max-width: 1024px) {
+  .layout {
+    display: flex;
+    flex-direction: column;
+  }
+  .divContainer {
+    flex-direction: row;
+  }
+  .main,
+  .divContainer {
+    padding: var(--padding-xxs) var(--padding-xxs);
+  }
+}
+@media (max-width: 600px) {
+  .divContainer {
+    flex-direction: column;
+  }
+}

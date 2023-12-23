@@ -80,3 +80,13 @@
   cursor: pointer;
   user-select: none;
 }
+
+@media (max-width: 1024px) {
+  .card,
+  .top {
+    display: none;
+    background: none;
+    /* display: flex; */
+    order: 11;
+  }
+}

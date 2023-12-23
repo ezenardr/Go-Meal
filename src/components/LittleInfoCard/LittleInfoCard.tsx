@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import Style from "./littleInfoCard.module.css";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";

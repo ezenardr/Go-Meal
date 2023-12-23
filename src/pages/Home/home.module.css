@@ -1,3 +1,19 @@
 .aside {
   background-color: var(--color-background-secondary);
 }
+@media (max-width: 1024px) {
+  .aside {
+    order: -11;
+    background-image: url("../../img/background-banner.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: var(--padding-xl) var(--padding-xs);
+    margin-bottom: 1rem;
+    border-radius: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .aside {
+    background: none;
+  }
+}

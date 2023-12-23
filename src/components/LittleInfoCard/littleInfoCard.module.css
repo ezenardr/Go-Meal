@@ -10,3 +10,8 @@
 .card p {
   font-size: clamp(1.6rem, 1.8vw + 1rem, 2rem);
 }
+@media (max-width: 1024px) {
+  .card {
+    height: 19rem;
+  }
+}
