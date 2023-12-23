@@ -3,15 +3,13 @@
   align-items: center;
   justify-content: center;
   gap: var(--spacing-sm);
-  /* background-color: var(--color-background-primary); */
-  /* background-color: #fff8ea; */
-  /* background-color: #b77f00; */
   padding: var(--padding-xs) var(--spacing-sm);
-  border-radius: 9px;
-  box-shadow: var(--shadow-card);
+  /* border-radius: 9px; */
+  /* box-shadow: var(--shadow-card); */
   transition: 0.3s all ease-in-out;
+  /* background-color: red; */
 }
-.card:hover {
+/* .card:hover {
   box-shadow: none;
 }
 .infoBox p:first-child {
@@ -22,4 +20,80 @@
 .infoBox p:nth-child(2) {
   color: var(--color-text);
   letter-spacing: 1px;
+} */
+
+.circleWrap {
+  width: 150px;
+  height: 150px;
+  background: var(--color-background-primary);
+  border-radius: 50%;
+  border: 1px solid transparent;
+}
+
+.circleWrap .circle .mask,
+.circleWrap .circle .fill {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+/* .circle {
+  width: 200px;
+  height: 300px;
+} */
+
+.circleWrap .circle .mask {
+  clip: rect(0px, 150px, 150px, 75px);
+}
+.mask .fill {
+  clip: rect(0px, 75px, 150px, 0px);
+}
+
+.circleWrap .insideCircle {
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 14px;
+  margin-left: 14px;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: clamp(1.8rem, 2vw + 1rem, 3rem);
+}
+.insideCircle {
+  background-color: var(--color-background-secondary) !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+.insideCircle span {
+  font-size: clamp(1.2rem, 1.6vw + 1rem, 1.8rem);
+  font-weight: 400;
+}
+
+/* color animation */
+
+/* 3rd progress bar */
+/* .mask .fill {
+  clip: rect(0px, 75px, 150px, 0px);
+} */
+
+:root {
+  --change: 120deg;
+}
+.mask.full,
+.circle .fill {
+  animation: fill ease-in-out 3s;
+  transform: rotate(var(--change));
+}
+@keyframes fill {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(var(--change));
+  }
 }

@@ -125,9 +125,9 @@ export default function Home() {
       <aside className={Style.aside}>
         <SimpleDivContainer>
           <BusinessStatusCard />
-          <LittleInfoCard title="Ventes" amount={357} />
-          <LittleInfoCard color="#A6C44A" title="Livraisons" amount={65} />
-          <LittleInfoCard color="#EB5757" amount={1300} title="Revenu" />
+          <LittleInfoCard color="#A6C44A" title="Ventes" amount={75} />
+          <LittleInfoCard color="#a48858" title="Livraisons" amount={28} />
+          <LittleInfoCard color="#EB5757" amount={87} title="Revenu" />
         </SimpleDivContainer>
       </aside>
     </Layout>

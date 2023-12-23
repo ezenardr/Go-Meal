@@ -1,10 +1,22 @@
+@font-face {
+  font-family: "Geist Sans";
+  src: url("../assets/fonts/Geist/Geist-Black.otf");
+  src: url("../assets/fonts/Geist/Geist-Black.woff2") format("woff2"),
+    url("../assets/fonts/Geist/Geist-Bold.woff2") format("woff2")
+      url("../assets/fonts/Geist/Geist-SemiBold.woff2") format("woff2")
+      url("../assets/fonts/Geist/Geist-Light.woff2") format("woff2")
+      url("../assets/fonts/Geist/Geist-UltraLight.woff2") format("woff2")
+      url("../assets/fonts/Geist/Geist-Medium.woff2") format("woff2")
+      url("../assets/fonts/Geist/Geist-Regular.woff2") format("woff2");
+}
 :root {
   font-size: var(--rem);
+  --font-family-primary: "Geist Sans", sans-serif;
 }
 
 body {
   font-size: var(--font-size);
-  font-family: var(--font-family-secondary);
+  font-family: var(--font-family-primary);
   background-color: var(--color-background-primary);
   color: var(--color-text);
   transition: background-color 0.5s ease-in-out, color 1s ease-in-out;
