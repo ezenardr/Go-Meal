@@ -127,7 +127,7 @@ export default function Home() {
           <BusinessStatusCard />
           <LittleInfoCard color="#A6C44A" title="Ventes" amount={75} />
           <LittleInfoCard color="#a48858" title="Livraisons" amount={28} />
-          <LittleInfoCard color="#EB5757" amount={87} title="Revenu" />
+          <LittleInfoCard color="#EB5757" amount={89} title="Revenu" />
         </SimpleDivContainer>
       </aside>
     </Layout>

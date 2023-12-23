@@ -37,10 +37,11 @@
 }
 .nameAndPrice p:first-child {
   color: var(--color-text);
+  /* font-weight: 100; */
 }
 .nameAndPrice p:nth-child(2) {
   color: var(--color-text);
-  font-weight: 700;
+  font-weight: 900;
 }
 .nameAndPrice p:nth-child(2) span {
   color: var(--color-primary);

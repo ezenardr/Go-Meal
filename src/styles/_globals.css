@@ -7,11 +7,25 @@
       url("../assets/fonts/Geist/Geist-Light.woff2") format("woff2")
       url("../assets/fonts/Geist/Geist-UltraLight.woff2") format("woff2")
       url("../assets/fonts/Geist/Geist-Medium.woff2") format("woff2")
-      url("../assets/fonts/Geist/Geist-Regular.woff2") format("woff2");
+      url("../assets/fonts/Geist/Geist-Regular.woff2") format("woff2"),
+    url("../assets/fonts/Geist/Geist-Thin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Geist Mono";
+  src: url("../assets/fonts/Geist-Mono/GeistMono-Black.otf");
+  src: url("../assets/fonts/Geist-Mono/GeistMono-Black.woff2") format("woff2"),
+    url("../assets/fonts/Geist-Mono/GeistMono-Bold.woff2") format("woff2")
+      url("../assets/fonts/Geist-Mono/GeistMono-SemiBold.woff2") format("woff2")
+      url("../assets/fonts/Geist-Mono/GeistMono-Light.woff2") format("woff2")
+      url("../assets/fonts/Geist-Mono/GeistMono-UltraLight.woff2")
+      format("woff2") url("../assets/fonts/Geist-Mono/GeistMono-Medium.woff2")
+      format("woff2") url("../assets/fonts/Geist-Mono/GeistMono-Regular.woff2")
+      format("woff2"),
+    url("../assets/fonts/Geist-Mono/GeistMono-Thin.woff2") format("woff2");
 }
 :root {
   font-size: var(--rem);
-  --font-family-primary: "Geist Sans", sans-serif;
+  /* --font-family-primary: "Geist Mono", sans-serif; */
 }
 
 body {
