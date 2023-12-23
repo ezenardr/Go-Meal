@@ -19,6 +19,7 @@ export default function LittleInfoCard({
         value={amount}
         text={`${amount}%`}
       />
+      <p style={{ color: color }}>{title}</p>
     </div>
   );
 }

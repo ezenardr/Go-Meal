@@ -1,8 +1,12 @@
 .card {
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
-  gap: var(--spacing-sm);
+  gap: var(--spacing-xs);
   padding: var(--padding-xs) var(--spacing-sm);
   transition: 0.3s all ease-in-out;
+}
+.card p {
+  font-size: clamp(1.6rem, 1.8vw + 1rem, 2rem);
 }
