@@ -9,13 +9,25 @@ import {
   TimerReset,
   X,
 } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Style from "./sidebarNavigation.module.css";
 export default function SidebarNavigation() {
-  const [isOpen, setIsOpen] = useState<boolean>(true);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [sticky, setSticky] = useState<boolean>(false);
+  function toogleSticky() {
+    if (window.scrollY > 50) {
+      setSticky(true);
+    } else {
+      setSticky(false);
+    }
+  }
+  useEffect(function () {
+    document.addEventListener("scroll", toogleSticky);
+    return () => document.removeEventListener("scroll", toogleSticky);
+  });
   return (
     <>
-      <div className={Style.menu}>
+      <div className={`${Style.menu} ${sticky && Style.sticky}`}>
         {isOpen ? (
           <X
             size={32}
@@ -33,7 +45,7 @@ export default function SidebarNavigation() {
           GoMeal<span>.</span>
         </h1>
       </div>
-      <nav className={`${Style.nav} ${isOpen ? Style.isOpen : ""}`}>
+      <nav className={`${Style.nav} ${isOpen ? Style.isOpen : ""} `}>
         <h1 className={Style.logo}>
           GoMeal<span>.</span>
         </h1>
