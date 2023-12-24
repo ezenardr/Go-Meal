@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import Style from "./sidebarNavigation.module.css";
+import { NavLink } from "react-router-dom";
 export default function SidebarNavigation() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [sticky, setSticky] = useState<boolean>(false);
@@ -48,33 +49,82 @@ export default function SidebarNavigation() {
           className={`${Style.responsiveNav} ${isOpen ? Style.isOpen : ""} `}
         >
           <ul className={Style.navList}>
-            <li className={`${Style.linkBox} ${Style.active}`}>
-              <LayoutDashboard className={Style.icon} />
-              <p className={Style.navLink}>Dashboard</p>
+            <li>
+              <NavLink
+                to={"/"}
+                className={({ isActive }) =>
+                  `${isActive ? Style.active : ""} ${Style.linkBox} `
+                }
+              >
+                <LayoutDashboard className={Style.icon} />
+                <p className={Style.navLink}>Dashboard</p>
+              </NavLink>
             </li>
-            <li className={Style.linkBox}>
-              <ScrollText className={Style.icon} />
-              <p className={Style.navLink}>Commandes</p>
+            <li>
+              <NavLink
+                to={"/orders"}
+                className={({ isActive }) =>
+                  `${isActive ? Style.active : ""} ${Style.linkBox} `
+                }
+              >
+                <ScrollText className={Style.icon} />
+                <p className={Style.navLink}>Commandes</p>
+              </NavLink>
             </li>
-            <li className={Style.linkBox}>
-              <TimerReset className={Style.icon} />
-              <p className={Style.navLink}>Historique</p>
+            <li>
+              <NavLink
+                to={"/history"}
+                className={({ isActive }) =>
+                  `${isActive ? Style.active : ""} ${Style.linkBox} `
+                }
+              >
+                <TimerReset className={Style.icon} />
+                <p className={Style.navLink}>Historiques</p>
+              </NavLink>
             </li>
-            <li className={Style.linkBox}>
-              <BarChart3 className={Style.icon} />
-              <p className={Style.navLink}>Statistiques</p>
+            <li>
+              <NavLink
+                to={"/statistics"}
+                className={({ isActive }) =>
+                  `${isActive ? Style.active : ""} ${Style.linkBox} `
+                }
+              >
+                <BarChart3 className={Style.icon} />
+                <p className={Style.navLink}>Statistiques</p>
+              </NavLink>
             </li>
-            <li className={Style.linkBox}>
-              <Mails className={Style.icon} />
-              <p className={Style.navLink}>Messages</p>
+            <li>
+              <NavLink
+                to={"/messages"}
+                className={({ isActive }) =>
+                  `${isActive ? Style.active : ""} ${Style.linkBox} `
+                }
+              >
+                <Mails className={Style.icon} />
+                <p className={Style.navLink}>Messages</p>
+              </NavLink>
             </li>
-            <li className={Style.linkBox}>
-              <CircleUserRound className={Style.icon} />
-              <p className={Style.navLink}>Compte</p>
+            <li>
+              <NavLink
+                to={"/account"}
+                className={({ isActive }) =>
+                  `${isActive ? Style.active : ""} ${Style.linkBox} `
+                }
+              >
+                <CircleUserRound className={Style.icon} />
+                <p className={Style.navLink}>Compte</p>
+              </NavLink>
             </li>
-            <li className={Style.linkBox}>
-              <Settings2 className={Style.icon} />
-              <p className={Style.navLink}>Paramètres</p>
+            <li>
+              <NavLink
+                to={"/settings"}
+                className={({ isActive }) =>
+                  `${isActive ? Style.active : ""} ${Style.linkBox} `
+                }
+              >
+                <Settings2 className={Style.icon} />
+                <p className={Style.navLink}>Paramètres</p>
+              </NavLink>
             </li>
           </ul>
         </nav>
@@ -84,33 +134,82 @@ export default function SidebarNavigation() {
           GoMeal<span>.</span>
         </h1>
         <ul className={Style.navList}>
-          <li className={`${Style.linkBox} ${Style.active}`}>
-            <LayoutDashboard className={Style.icon} />
-            <p className={Style.navLink}>Dashboard</p>
+          <li>
+            <NavLink
+              to={"/"}
+              className={({ isActive }) =>
+                `${isActive ? Style.active : ""} ${Style.linkBox} `
+              }
+            >
+              <LayoutDashboard className={Style.icon} />
+              <p className={Style.navLink}>Dashboard</p>
+            </NavLink>
           </li>
-          <li className={Style.linkBox}>
-            <ScrollText className={Style.icon} />
-            <p className={Style.navLink}>Commandes</p>
+          <li>
+            <NavLink
+              to={"/orders"}
+              className={({ isActive }) =>
+                `${isActive ? Style.active : ""} ${Style.linkBox} `
+              }
+            >
+              <ScrollText className={Style.icon} />
+              <p className={Style.navLink}>Commandes</p>
+            </NavLink>
           </li>
-          <li className={Style.linkBox}>
-            <TimerReset className={Style.icon} />
-            <p className={Style.navLink}>Historique</p>
+          <li>
+            <NavLink
+              to={"/history"}
+              className={({ isActive }) =>
+                `${isActive ? Style.active : ""} ${Style.linkBox} `
+              }
+            >
+              <TimerReset className={Style.icon} />
+              <p className={Style.navLink}>Historiques</p>
+            </NavLink>
           </li>
-          <li className={Style.linkBox}>
-            <BarChart3 className={Style.icon} />
-            <p className={Style.navLink}>Statistiques</p>
+          <li>
+            <NavLink
+              to={"/statistics"}
+              className={({ isActive }) =>
+                `${isActive ? Style.active : ""} ${Style.linkBox} `
+              }
+            >
+              <BarChart3 className={Style.icon} />
+              <p className={Style.navLink}>Statistiques</p>
+            </NavLink>
           </li>
-          <li className={Style.linkBox}>
-            <Mails className={Style.icon} />
-            <p className={Style.navLink}>Messages</p>
+          <li>
+            <NavLink
+              to={"/messages"}
+              className={({ isActive }) =>
+                `${isActive ? Style.active : ""} ${Style.linkBox} `
+              }
+            >
+              <Mails className={Style.icon} />
+              <p className={Style.navLink}>Messages</p>
+            </NavLink>
           </li>
-          <li className={Style.linkBox}>
-            <CircleUserRound className={Style.icon} />
-            <p className={Style.navLink}>Compte</p>
+          <li>
+            <NavLink
+              to={"/account"}
+              className={({ isActive }) =>
+                `${isActive ? Style.active : ""} ${Style.linkBox} `
+              }
+            >
+              <CircleUserRound className={Style.icon} />
+              <p className={Style.navLink}>Compte</p>
+            </NavLink>
           </li>
-          <li className={Style.linkBox}>
-            <Settings2 className={Style.icon} />
-            <p className={Style.navLink}>Paramètres</p>
+          <li>
+            <NavLink
+              to={"/settings"}
+              className={({ isActive }) =>
+                `${isActive ? Style.active : ""} ${Style.linkBox} `
+              }
+            >
+              <Settings2 className={Style.icon} />
+              <p className={Style.navLink}>Paramètres</p>
+            </NavLink>
           </li>
         </ul>
       </nav>

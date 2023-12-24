@@ -91,16 +91,6 @@
     transform: translateX(-100%);
     transition: 0.3s all ease-in-out;
   }
-  /* .nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    z-index: 111;
-    width: 25vw;
-    transform: translateX(-100%);
-    transition: 0.3s all ease-in-out;
-  } */
   .nav .logo {
     display: none;
   }
