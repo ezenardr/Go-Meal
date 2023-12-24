@@ -51,11 +51,9 @@
 .menu {
   display: none;
 }
-.sticky {
-  position: fixed !important;
-  animation-duration: 0.7s;
-  animation-name: fadeInDown;
-  animation-timing-function: ease-out;
+
+.menu .logo {
+  display: none;
 }
 @keyframes fadeInDown {
   0% {
@@ -69,6 +67,12 @@
 }
 
 @media (max-width: 1200px) {
+  .sticky {
+    position: fixed !important;
+    animation-duration: 0.3s;
+    animation-name: fadeInDown;
+    animation-timing-function: ease-out;
+  }
   .nav {
     position: absolute;
     top: 0;
@@ -79,7 +83,7 @@
     transform: translateX(-100%);
     transition: 0.3s all ease-in-out;
   }
-  .logo {
+  .nav .logo {
     display: none;
   }
   .menu {
@@ -94,18 +98,14 @@
     justify-content: space-between;
     z-index: 1111;
   }
-  .menu .icon {
+  .menu .logo {
+    display: block;
+  }
+  .menu .iconBtn {
     cursor: pointer;
   }
   .isOpen {
     transform: translateX(0);
-  }
-  .responsiveLogo {
-    margin-bottom: 0;
-    cursor: pointer;
-  }
-  .responsiveLogo span {
-    color: var(--color-primary);
   }
   .navList {
     padding-top: 7rem;
