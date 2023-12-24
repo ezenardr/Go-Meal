@@ -31,21 +31,25 @@ export default function SidebarNavigation() {
         {isOpen ? (
           <X
             size={32}
-            className={Style.icon}
+            className={Style.iconBtn}
             onClick={() => setIsOpen(false)}
           />
         ) : (
           <AlignJustify
             size={32}
-            className={Style.icon}
+            className={Style.iconBtn}
             onClick={() => setIsOpen(true)}
           />
         )}
-        <h1 className={Style.responsiveLogo}>
+        <h1 className={Style.logo}>
           GoMeal<span>.</span>
         </h1>
       </div>
-      <nav className={`${Style.nav} ${isOpen ? Style.isOpen : ""} `}>
+      <nav
+        className={`${Style.nav} ${isOpen ? Style.isOpen : ""} ${
+          sticky && Style.stickyNav
+        } `}
+      >
         <h1 className={Style.logo}>
           GoMeal<span>.</span>
         </h1>

@@ -19,7 +19,7 @@ export default function ProductCardWithoutRating({
   return (
     <div className={Style.card}>
       <p className={`${Style.status} ${status}`}>{status}</p>
-      <img src={image} width={180} />
+      <img src={image} width={150} />
       <div className={Style.info}>
         <p>{name}</p>
         <p>

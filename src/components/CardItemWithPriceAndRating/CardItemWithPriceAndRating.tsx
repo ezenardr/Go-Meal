@@ -27,7 +27,7 @@ export default function CardItemWithPriceAndRating({
         <Heart className={Style.like} color="#a098ae" fill="#a098ae" />
       )}
 
-      <img src={image} width={230} height={150} />
+      <img src={image} width={190} height={130} />
       <div>
         <div className={Style.ratings}>
           <Star size={15} color="#f8b602" fill="#f8b602" />
