@@ -5,17 +5,17 @@ import Burger from "../../img/burger.svg";
 import BurgerImg from "../../img/burger-img.webp";
 import PizzaImg from "../../img/pizza.jpg";
 import Style from "./home.module.css";
-import Layout, {
+import DashboardLayout, {
   MainContainer,
   SimpleDivContainer,
-} from "../../components/Layout/Layout";
+} from "../../components/Layout/Layouts";
 import ProductCardWithoutRating from "../../components/ProductCardWithoutRating/ProductCardWithoutRating";
 import LittleInfoCard from "../../components/LittleInfoCard/LittleInfoCard";
 import BusinessStatusCard from "../../components/BusinessStatusCard/BusinessStatusCard";
 
 export default function Home() {
   return (
-    <Layout>
+    <DashboardLayout>
       <MainContainer>
         <SectionWithItemList title="Categorie">
           <li>
@@ -130,6 +130,6 @@ export default function Home() {
           <LittleInfoCard color="#EB5757" amount={89} title="Revenu" />
         </SimpleDivContainer>
       </aside>
-    </Layout>
+    </DashboardLayout>
   );
 }

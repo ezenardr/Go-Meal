@@ -29,9 +29,13 @@
   --gray-900: #171717;
 
   --color-success: hsla(158, 90%, 40%, 1);
+  --color-success-light: rgba(10, 194, 127, 0.1);
   --color-info: hsla(212, 90%, 48%, 1);
+  --color-info-light: rgba(12, 115, 233, 0.1);
   --color-warning: hsla(42, 90%, 48%, 1);
+  --color-warning-light: rgba(233, 167, 12, 0.1);
   --color-error: hsla(346, 90%, 48%, 1);
+  --color-error-light: rgba(233, 12, 64, 0.1);
   --color-highlight: hsl(59, 100%, 50%);
 
   /* Spacing*/

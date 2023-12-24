@@ -2,9 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import Layout from "./components/Layout/Layout.tsx";
+import DashboardLayout from "./components/Layout/Layouts.tsx";
 import "./styles/main.css";
 import Home from "./pages/Home/Home.tsx";
+import Orders from "./pages/Orders/Orders.tsx";
 
 const router = createBrowserRouter([
   {
@@ -13,50 +14,46 @@ const router = createBrowserRouter([
   },
   {
     path: "/orders",
-    element: (
-      <Layout>
-        <h1>Orders</h1>,
-      </Layout>
-    ),
+    element: <Orders />,
   },
   {
     path: "/history",
     element: (
-      <Layout>
+      <DashboardLayout>
         <h1>History</h1>,
-      </Layout>
+      </DashboardLayout>
     ),
   },
   {
     path: "/statistics",
     element: (
-      <Layout>
+      <DashboardLayout>
         <h1>Statistiques</h1>,
-      </Layout>
+      </DashboardLayout>
     ),
   },
   {
     path: "/messages",
     element: (
-      <Layout>
+      <DashboardLayout>
         <h1>Messages</h1>,
-      </Layout>
+      </DashboardLayout>
     ),
   },
   {
     path: "/account",
     element: (
-      <Layout>
+      <DashboardLayout>
         <h1>Compte</h1>,
-      </Layout>
+      </DashboardLayout>
     ),
   },
   {
     path: "/settings",
     element: (
-      <Layout>
+      <DashboardLayout>
         <h1>Settings</h1>,
-      </Layout>
+      </DashboardLayout>
     ),
   },
 ]);
