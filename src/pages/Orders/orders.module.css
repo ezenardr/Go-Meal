@@ -1,0 +1,56 @@
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-xs);
+}
+.topBar .barLeft {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.barLeft h4 {
+  margin: 0;
+}
+.statusBar {
+  display: flex;
+  gap: var(--spacing-xs);
+}
+.statusBar p {
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+.statusBar .active,
+.statusBar p:hover {
+  font-size: bold;
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-primary);
+}
+.tableHead {
+  box-shadow: var(--shadow-xs);
+  padding-inline: 0.5rem;
+  border-radius: 9px;
+}
+.table th,
+.table td {
+  text-align: start;
+  padding-block: var(--padding-xs);
+}
+.table tr {
+  display: grid;
+  grid-template-columns: 3% 25% auto 20% 10% 10%;
+  gap: 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+.tableHead th {
+  font-size: clamp(1.4rem, 1.4vw + 1rem, 1.5rem);
+}
+.table tr td {
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+.status {
+  text-align: center;
+  border-radius: 9px;
+  padding: 0.2rem;
+}
