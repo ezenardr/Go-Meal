@@ -5,7 +5,8 @@ import Burger from "../../img/burger.svg";
 import BurgerImg from "../../img/burger-img.webp";
 import PizzaImg from "../../img/pizza.jpg";
 import Style from "./home.module.css";
-import DashboardLayout, {
+import {
+  DashboardLayout,
   MainContainer,
   SimpleDivContainer,
 } from "../../components/Layout/Layouts";

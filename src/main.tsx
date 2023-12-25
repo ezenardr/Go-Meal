@@ -2,10 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import DashboardLayout from "./components/Layout/Layouts.tsx";
 import "./styles/main.css";
 import Home from "./pages/Home/Home.tsx";
 import Orders from "./pages/Orders/Orders.tsx";
+import { DashboardLayout } from "./components/Layout/Layouts.tsx";
 
 const router = createBrowserRouter([
   {
