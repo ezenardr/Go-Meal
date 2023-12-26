@@ -7,8 +7,7 @@ export default function Orders() {
       <MainContainer>
         <div className={Style.topBar}>
           <div className={Style.barLeft}>
-            <h4>Commandes</h4>
-            <p>15 Commandes trouvé</p>
+            <h4>15 Commandes</h4>
           </div>
           <p>Date</p>
         </div>

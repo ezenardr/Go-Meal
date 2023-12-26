@@ -18,7 +18,6 @@
   gap: var(--spacing-sm);
 }
 .globalLayout {
-  width: 100vw;
   max-width: var(--container-xl);
   margin: 0 auto;
   display: grid;
@@ -32,6 +31,9 @@
   .divContainer {
     padding: var(--padding-xl) var(--padding-xs);
     padding-bottom: 2rem;
+  }
+  .globalLayout {
+    grid-template-columns: 100%;
   }
 }
 @media (max-width: 1024px) {
